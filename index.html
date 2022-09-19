@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <button onclick="timedText()">Try it</button>
+
+    <p id="demo">Click 'tryit' i will show 2,4 and 6 sec passed </p>
+
+    <script>
+        function timedText(){
+            setTimeout(time1,2000)
+            setTimeout(time2,4000)
+            setTimeout(time3,6000)
+        }
+        function time1(){
+            document.getElementById("demo").innerHTML= "2 Seconds"
+        }
+        function time2(){
+            document.getElementById("demo").innerHTML="4 Seconds"
+        }
+        function time3(){
+            document.getElementById("demo").innerHTML="6 Seconds"
+        }
+
+    </script>
+</body>
+</html>
