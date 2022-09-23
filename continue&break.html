@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <p>A loop will skip step when i=3 and applied break in i=7</p>
+    <p id="demo"></p>
+    <script>
+        var text="";
+        var i;
+       for(i=0; i<10; i++){
+        if(i===3){continue;}
+        if(i===7){break}
+        text += "the number is :"+i+"<br>";
+       }
+       document.getElementById("demo").innerHTML=text;
+    </script>
+</body>
+</html>
