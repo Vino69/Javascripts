@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <h2>Finding Html elements Tagclass</h2>
+
+    <p>HellWorld!</p>
+
+    <p class="intro">the DOM is very useful</p>
+    <p class="intro">This examples demonstrates the <b>getElementsByClassName</b>method</p>
+
+    <p id="demo"></p>
+    <script>
+        var x= document.getElementsByClassName("intro");
+        document.getElementById("demo").innerHTML = 'the first index-0 is: '+x[0].innerHTML;
+    </script>
+</body>
+</html>
