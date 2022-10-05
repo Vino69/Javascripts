@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    
+    <h2>JavaScript AddEventLister</h2>
+
+    <p> we use AddeventLister() method to add with click event to a button</p>
+
+    <button id="mybtn">Try it</button>
+
+    <p id="demo" ></p>
+
+    <script>
+        document.getElementById("mybtn").addEventListener("click",displaydate);
+
+        function displaydate(){
+            document.getElementById("demo").innerHTML= Date();
+        }
+    </script>
+</body>
+</html>
