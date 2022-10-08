@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #mydiv1,#mydiv2{
+            background-color: aqua;
+            padding: 50px;
+        }
+        #P1,#P2{
+            background-color: blue;
+            font-size: 20px;
+            border: 1px solid;
+            padding: 20px;
+        }
+    </style>
+    
+</head>
+<body>
+    <h2>AddEventListener</h2>
+    <div id="mydiv1">
+        <h2>bubbling</h2>
+        <div id="P1">clickme!</div>
+    </div>
+
+    <div id="mydiv2">
+        <h2>capturing</h2>
+        <div id="P2">Clickme!</div>
+    </div>
+    <script>
+        document.getElementById('P1').addEventListener("click", function(){
+            alert("U clicked Aqua element");
+        },false);
+        document.getElementById("mydiv1").addEventListener("click", function(){
+            alert("U clicked Blue element");
+        }, false);
+        document.getElementById("P2").addEventListener("click", function(){
+            alert("U clicked Aqua element");
+        }, true);
+        document.getElementById('mydiv2').addEventListener("click", function(){
+            alert("u clicked blue element");
+        },true);
+    </script>
+</body>
+</html>
