@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <h2>the navigator object</h2>
+
+    <p> the name returns application name of browser:</p>
+
+    <p id="demo"></p>
+
+    <p>strange enough, "Netscape" is the application name for both IE11 , chorme, firefox, and safari.</p>
+
+    <p id="version"></p>
+
+    <script>
+        document.getElementById('demo').innerHTML= "The navigator app name is: " +navigator.appName;
+
+        document.getElementById("version").innerHTML = "The Browser Details is : " +navigator.appVersion;
+    </script>
+</body>
+</html>
