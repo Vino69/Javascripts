@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+  <h2>Navigator object</h2>
+  
+  <p>the platform property returns browser platform(operating system)</p>
+
+  <p id="demo" ></p>
+    <p id="p1"></p>
+    <p>browser is online?</p>
+    <p id="p2"></p>
+  <script>
+    document.getElementById("demo").innerHTML = "Navigator platform is: " +navigator.platform;
+    document.getElementById("p1").innerHTML = "Navigator Language is :" +navigator.languages;
+    document.getElementById('p2').innerHTML = "Browser is online : "+ navigator.onLine;
+
+  </script>
+</body>
+</html>
